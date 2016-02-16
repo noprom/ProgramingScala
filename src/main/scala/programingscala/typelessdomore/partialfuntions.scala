@@ -19,7 +19,7 @@ object partialfuntions {
 
   def d(x: Any, f: PartialFunction[Any, String]) = f.isDefinedAt(x).toString
 
-  def main (args: Array[String]){
+  def main (args: Array[String]) {
     println(" | pf1 - String | pf2 - Double | pf - All")
     println("x | def? | pf1(x) | def? | pf2(x) | def? | pf(x)")
     println("++++++++++++++++++++++++++++++++++++++++++++++++++++++++++")
