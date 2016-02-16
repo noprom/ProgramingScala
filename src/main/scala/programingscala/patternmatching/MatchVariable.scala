@@ -21,5 +21,19 @@ object MatchVariable {
       }
       println(str)
     }
+
+    // Another version
+    for {
+      x <- Seq(1, 2, 2.7, "one", "two", 'four)
+    } {
+      val str = x match {
+        case 1            => "int 1"
+        case _: Int       => "other int: " + x
+        case _: Double    => "a double: " + x
+        case "one"        => "string one: " + x
+        case _            => "unexpected value: " + x
+      }
+      println(str)
+    }
   }
 }
