@@ -8,6 +8,12 @@ package programingscala.patternmatching
  */
 object MatchSeq {
 
+  /**
+   * Seq:
+   * (node1, (node2, (node3, (node4, (end))))
+   *
+   * @param args
+   */
   def main(args: Array[String]) {
     val nonEmptySeq = Seq(1, 2, 3, 4, 5)
     val emptySeq = Seq.empty[Int]
