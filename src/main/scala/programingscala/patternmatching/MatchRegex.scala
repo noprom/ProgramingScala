@@ -18,10 +18,12 @@ object MatchRegex {
       "Unknown: text=Who put this here??"
     )
 
-    for (item <- catalog) { item match {
-      case BookExtractorRE(title, author) => println(s"""Book "$title", written by $author""")
-      case MagazineExtractorRE(title, issue) => println(s"""Magazine "$title", issue $issue""")
-      case entry => println(s"Unrecognized entry: $entry") }
+    for (item <- catalog) {
+      item match {
+        case BookExtractorRE(title, author) => println( s"""Book "$title", written by $author""")
+        case MagazineExtractorRE(title, issue) => println( s"""Magazine "$title", issue $issue""")
+        case entry => println(s"Unrecognized entry: $entry")
+      }
     }
   }
 }
