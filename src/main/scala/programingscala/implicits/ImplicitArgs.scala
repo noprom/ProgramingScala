@@ -36,9 +36,6 @@ object ImplicitArgs {
     implicit def date(implicit cstd: ComplicatedSalesTaxData): Float =
       if (cstd.isTaxHoliday) 0.0F
       else cstd.baseRate + extraTaxRateForStore(cstd.storeId)
-  }
-
-
-
+  }w
 }
 
