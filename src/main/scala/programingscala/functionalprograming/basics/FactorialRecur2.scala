@@ -25,8 +25,9 @@ object FactorialRecur2 {
   }
 
   def main(args: Array[String]) {
-    for (i <- 1 to 10)
-      println(s"$i:\t${factorial(i)}")
+    println(s"1000! = ${factorial(1000)}")
+//    for (i <- 1 to 10)
+//      println(s"$i:\t${factorial(i)}")
   }
 }
 
