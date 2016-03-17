@@ -6,7 +6,6 @@ package programingscala.basicoop
   * Author: Noprom <tyee.noprom@qq.com>
   * Date: 16/3/16 下午1:49.
   */
-
 trait Digitizer extends Any {
   def digits(s: String): String = s.replaceAll("""\D""", "") // 数字化
 }
