@@ -11,7 +11,7 @@ case class Address(street: String, city: String, state: String, zip: String) {
     this("[unknown]", Address.zipToCity(zip), Address.zipToState(zip), zip)
 }
 
-object Address {
+class Address {
   def zipToCity(zip: String) = "Anytown"
 
   def zipToState(zip: String) = "CA"
